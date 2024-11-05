@@ -8,10 +8,7 @@
 .text-gray {
   color: #a6a6a6;
 }
-.text-red::before,.text-red::after{
-  content: '•';
-  color: crimson;
-}
+
 ul,
 ol {
   list-style: none; /* Убирает маркеры для ul и нумерацию для ol */
@@ -188,4 +185,11 @@ h2 {
 }
 
 .works {
+  display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px; 
+    .work__item{
+      overflow: hidden;
+      height: calc(100px + (100px * (random() % 2))); 
+    }
 }
