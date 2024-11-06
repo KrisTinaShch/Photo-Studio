@@ -135,8 +135,22 @@
         </div>
       </div>
     </section>
-
-
+    <script>
+      // Подгоняем высоту каждого элемента под содержимое для эффекта masonry
+      const resizeGridItems = () => {
+          const grid = document.querySelector('.works');
+          const allItems = document.querySelectorAll('.works__container');
+          const rowHeight = 10;  // Базовое значение для промежутков
+          allItems.forEach(item => {
+              const img = item.querySelector('img');
+              const rowSpan = Math.ceil((img.naturalHeight / img.naturalWidth) * 150); // адаптивное растяжение
+              item.style.gridRowEnd = `span ${rowSpan}`;
+          });
+      };
+  
+      window.addEventListener('load', resizeGridItems);
+      window.addEventListener('resize', resizeGridItems);
+  </script>
   </body>
 </html>
 
