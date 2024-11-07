@@ -96,7 +96,22 @@ img {
 h2 {
   font-size: 45px;
   text-transform: uppercase;
-  color: #252525;
+  color: #fff;
+  position: relative;
+  margin: 50px 0;
+  display: inline-block;
+  &::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    background: #cf1211;
+    bottom: 0;
+  }
+}
+
+section {
+  margin-top: 50px;
 }
 
 .col {
@@ -237,6 +252,7 @@ h2 {
 }
 
 .works {
+
   .works__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
