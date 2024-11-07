@@ -59,7 +59,8 @@ p {
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
   }
-  &::before{
+
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -68,8 +69,9 @@ p {
     height: 100%;
     background: #cf1211;
     transition: width 0.5s ease;
-    z-index: -1; 
+    z-index: -1;
   }
+
   &:hover::before {
     width: 100%;
   }
@@ -235,10 +237,22 @@ h2 {
 }
 
 .works {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-
   .works__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .work__item {
     height: fit-content;
+
+    img {
+      filter: grayscale(1);
+      transition: 0.5s ease;
+      cursor: pointer;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
   }
 }
