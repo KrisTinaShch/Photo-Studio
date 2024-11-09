@@ -44,6 +44,10 @@ p {
   color: #353535;
 }
 
+.m-auto {
+  margin: 0 auto;
+}
+
 .main__button {
   position: relative;
   background: transparent;
@@ -220,11 +224,22 @@ section {
 }
 
 .about {
-  padding: 120px 40px;
+  border-bottom: 2px solid #a6a6a6;
+  margin-top: 150px;
 
   .about__row {
-    align-items: flex-end;
     position: relative;
+
+    .about__row-left {
+      img {
+        max-width: 70%;
+        // filter: brightness(0.8);
+        filter: saturate(0.7);
+      }
+
+      display: flex;
+      justify-content: center;
+    }
 
     .about__sideimage:hover {
       filter: grayscale(0);
@@ -234,21 +249,7 @@ section {
       padding: 0px 50px;
 
       p {
-        margin-top: 20px;
-      }
-    }
-
-    .about__row-left {
-      img {
-        z-index: 0;
-      }
-
-      h2 {
-        position: relative;
-        text-align: center;
-        margin-bottom: -25px;
-        font-size: 55px;
-        z-index: 1;
+        margin: 20px 0;
       }
     }
   }
@@ -289,7 +290,8 @@ section {
   z-index: 1;
 }
 
-.slick-prev:before,.slick-next:before{
+.slick-prev:before,
+.slick-next:before {
   content: '';
   position: absolute;
   background: url(/PhotoStudioMetro/images/svgs/arrow-right.svg) no-repeat left center / contain;
@@ -297,6 +299,7 @@ section {
   width: 100px;
   height: 100px;
 }
+
 .slick-prev:before {
   left: 0;
   transform: scaleX(-1);
