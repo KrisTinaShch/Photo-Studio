@@ -44,8 +44,34 @@ p {
   color: #353535;
 }
 
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+
+
 .m-auto {
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .main__button {
@@ -220,6 +246,15 @@ section {
       margin-top: 20px;
     }
 
+  }
+}
+
+.zones {
+  .zones-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 0 50px 0;
   }
 }
 
