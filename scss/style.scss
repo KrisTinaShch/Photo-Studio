@@ -410,12 +410,15 @@ section {
   background-color: #151515;
   color: #fff;
   padding: 20px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2vw;
 }
 
 .footer__row {
-  justify-content: flex-end !important;
-  align-items: center;
-  gap: 45px;
+  justify-content: space-between !important;
 }
 
 .footer__nav .footer__links {
@@ -433,6 +436,10 @@ section {
   text-decoration: none;
 }
 
+.footer__contact {
+  display: flex;
+  gap: 25px;
+}
 
 .footer__contact a {
   color: #fff;
