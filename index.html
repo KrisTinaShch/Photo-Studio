@@ -5,184 +5,218 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Photo Studio</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/grid.css" />
-  <!-- JQuery -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <!-- slick -->
-  <link rel="stylesheet" href="lib/slick-1.8.1/slick/slick.css">
-  <script defer src="lib/slick-1.8.1/slick/slick.min.js"></script>
-  <script defer src="script.js"></script>
-
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/grid.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <header class="header">
-    <nav class="header__menu">
-      <ul class="header__menu-items">
-        <li class="menu__item">
-          <a class="menu__link" href="#works">Works</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#zone">Studio Zones</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#about">About Me</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#price">Pricing</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#freedate">Available Dates</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+
+  <header id="main-header" class="header">
+    <div class="header-container">
+      <a href="#" class="logo"><img src="assets/img/logo.webp" alt="logo"></a>
+      <div class="burger" id="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="#home">Залы</a></li>
+          <li><a href="#about">Оборудование</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#photographer">Фотограф</a></li>
+          <li><a href="#works">Работы</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <ul>
+          <li><a href="#social" class="social-links"><img src="assets/img/social/social.png" alt="instagram"
+                class="social-link"></a></li>
+          <li><a href="#facebook" class="social-links"><img src="assets/img/social/facebook.png" alt="facebook"
+                class="social-link"> </a>
+          </li>
+          <li><a href="#youtube" class="social-links"><img src="assets/img/social/youtube.png" alt="youtube"
+                class="social-link"></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <section class="index">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12"></div>
-        <div class="col-md-6 col-sm-12">
-          <div class="index__text-container">
-            <h1>WHERE GREAT IDEAS COME TO LIFE</h1>
-            <p>
-              Passionate creative studio helping startups grow their business!
-            </p>
-            <div class="index__buttons">
-              <button class="main__button"><a href="#">My works</a></button>
-              <button class="main__button"><a href="#">Contacts</a></button>
-            </div>
-          </div>
-        </div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Добро пожаловать на наш сайт!</h1>
+      <p>Здесь можно найти полезную информацию</p>
+      <div class="hero-buttons">
+        <button class="hero-button">Забронировать зал</button>
       </div>
     </div>
+    <video class="hero-video" autoplay muted loop>
+      <source src="assets/img/hero-video2.mp4" type="video/mp4">
+    </video>
   </section>
 
-  <section class="about">
-    <div class="container about__container">
-      <div class="row about__row">
-        <div class="col-md-6 about__row-left about__col">
-          <img src="images/sergey.png" alt="sergey" />
-        </div>
-        <div class="col-md-6 about__row-right about__col">
-          <div class="about__information">
-            <h2 class="text-white">Hi, i`m Sergey</h2>
-            <p class="text-gray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              cupiditate dicta a adipisci <v>doloremque ratione nam praesentium
-                magni hic corporis.
-            </p>
-            <p class="text-gray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis velit aliquam illum optio facilis minima, et non
-              reprehenderit molestias eius.
-            </p>
-            <button class="main__button"><a href="#">My works</a></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
   <section class="works">
     <div class="container">
-      <h2>Works</h2>
-    </div>
-    <div class="works__container">
-      <div class="work__item">
-        <img src="images/works/girl_5.jpg" alt="" class="work__item">
-      </div>
-      <div class="work__item">
-        <img src="images/works/girl_1.jpg" alt="" class="work__item">
-      </div>
-      <div class="work__item">
-        <img src="images/works/girl_2.jpg" alt="" class="work__item">
-      </div>
-      <div class="work__item">
-        <img src="images/works/girl_3.jpg" alt="" class="work__item">
-      </div>
-      <div class="work__item">
-        <img src="images/works/girl_4.jpg" alt="" class="work__item">
-      </div>
-    </div>
-    <div class="container text-center mt-5">
-      <button class="main__button"><a href="#">View more</a></button>
-    </div>
-  </section>
-
-  <section class="zones">
-    <div class="container zones__container">
-      <div class="row zones__row">
-        <div class="col-12">
-          <h2>Studio Zones</h2>
-          <div class="zones-gallery">
-            <img src="images/studio-zones/zone-1.jpg" alt="zone 1">
-            <img src="images/studio-zones/zone-2.jpg" alt="zone 1">
-            <img src="images/studio-zones/zone-2.jpg" alt="zone 1">
-            <img src="images/studio-zones/zone-1.jpg" alt="zone 1">
-          </div>
-        </div>
-        <div class="col-12 text-center">
-          <button class="main__button"><a href="#">View more</a></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="pricing">
-    <div class="container">
+      <h2>Работы</h2>
       <div class="row">
         <div class="col-12">
-          <h2>Pricing</h2>
+          <div class="works-gallery">
+            <img src="assets/img/works/work1.png" alt="work1">
+            <img src="assets/img/works/work2.png" alt="work2">
+            <img src="assets/img/works/work3.png" alt="work3">
+          </div>
+          <div class="works-gallery">
+            <img src="assets/img/works/work4.png" alt="work 1">
+            <img src="assets/img/works/work5.png" alt="work 2">
+            <img src="assets/img/works/work6.png" alt="work 3">
+          </div>
+          <div class="works-gallery">
+            <img src="assets/img/works/work7.png" alt="work 4">
+            <img src="assets/img/works/work8.png" alt="work 5">
+            <img src="assets/img/works/work6.png" alt="work 3">
+          </div>
+          <div class="works-gallery">
+            <img src="assets/img/works/work1.png" alt="work1">
+            <img src="assets/img/works/work2.png" alt="work2">
+            <img src="assets/img/works/work3.png" alt="work3">
+          </div>
+          <div class="works-gallery">
+            <img src="assets/img/works/work4.png" alt="work 1">
+            <img src="assets/img/works/work5.png" alt="work 2">
+            <img src="assets/img/works/work6.png" alt="work 3">
+          </div>
         </div>
-        <div class="col-12">
-          <div class="pricing__cards text-white text-center">
-            <div class="card_item">
-              <div class="card__item-badge">Standart</div>
-              <div class="card__item-price">$200</div>
-              <div class="card__item-bullets">
-                <ul class="bullet-container">
-                  <li class="bullet_item">1 GB Photos</li>
-                  <li class="bullet_item">Secure Online Transfer</li>
-                  <li class="bullet_item">Unlimited Styles</li>
-                  <li class="bullet_item">Customer Service</li>
-                  <li class="bullet_item">Manual Backup</li>
-                </ul>
-              </div>
-              <button class="main__button"><a href="#">My works</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="rooms">
+    <div class="container">
+      <h2>Залы</h2>
+      <div class="row room-item">
+        <div class="col-4">
+          <div class="room-item__content">
+            <div class="room-item__image">
+              <img src="assets/img/rooms/room1.jpg" alt="room 1">
             </div>
-            <div class="card_item">
-              <div class="card__item-badge">Standart</div>
-              <div class="card__item-price">$400</div>
-              <div class="card__item-bullets">
-                <ul class="bullet-container">
-                  <li class="bullet_item">1 GB Photos</li>
-                  <li class="bullet_item">Secure Online Transfer</li>
-                  <li class="bullet_item">Unlimited Styles</li>
-                  <li class="bullet_item">Customer Service</li>
-                  <li class="bullet_item">Manual Backup</li>
-                </ul>
-              </div>
-              <button class="main__button"><a href="#">My works</a></button>
+            <div class="room-item__description">
+              <h3>Зал 1</h3>
+              <p><b>Зал:</b> 120 кв. м, белый потолок, высота потолков 6м, панорамное остекление, белый потолок и
+                бетонный
+                пол</p>
+              <p><b>Циклорама:</b> есть 4х5.5 м (ГхШ), доп. оплата за использование в случае загрязнения</p>
+              <p><b>Цена:</b> 2500 руб. / час (бронь от 1 часа)</p>
+              <p><b>Интерьер:</b> концептуальная мебель, геометрическая конструкция, хромированный угол с металлическим
+                столиком, ростовое зеркало</p>
+              <p><b>Оборудование:</b> в стоимость зала включены 2 импульсных источника света.</p>
             </div>
-            <div class="card_item">
-              <div class="card__item-badge">Standart</div>
-              <div class="card__item-price">$600</div>
-              <div class="card__item-bullets">
-                <ul class="bullet-container">
-                  <li class="bullet_item">1 GB Photos</li>
-                  <li class="bullet_item">Secure Online Transfer</li>
-                  <li class="bullet_item">Unlimited Styles</li>
-                  <li class="bullet_item">Customer Service</li>
-                  <li class="bullet_item">Manual Backup</li>
-                </ul>
-              </div>
-              <button class="main__button"><a href="#">My works</a></button>
+            <div class="room-item__button">
+              <button class="hero-button">Забронировать</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="room-item__content">
+            <div class="room-item__image">
+              <img src="assets/img/rooms/room2.jpg" alt="room 2">
+            </div>
+            <div class="room-item__description">
+              <h3>Зал 2</h3>
+              <p><b>Зал:</b> 120 кв. м, белый потолок, высота потолков 6м, панорамное остекление, белый потолок и
+                бетонный
+                пол</p>
+              <p><b>Циклорама:</b> есть 4х5.5 м (ГхШ), доп. оплата за использование в случае загрязнения</p>
+              <p><b>Цена:</b> 2500 руб. / час (бронь от 1 часа)</p>
+              <p><b>Интерьер:</b> концептуальная мебель, геометрическая конструкция, хромированный угол с металлическим
+                столиком, ростовое зеркало</p>
+              <p><b>Оборудование:</b> в стоимость зала включены 2 импульсных источника света.</p>
+            </div>
+            <div class="room-item__button">
+              <button class="hero-button">Забронировать</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="room-item__content">
+            <div class="room-item__image">
+              <img src="assets/img/rooms/room3.jpg" alt="room 2">
+            </div>
+            <div class="room-item__description">
+              <h3>Зал 3</h3>
+              <p><b>Зал:</b> 120 кв. м, белый потолок, высота потолков 6м, панорамное остекление, белый потолок и
+                бетонный
+                пол</p>
+              <p><b>Циклорама:</b> есть 4х5.5 м (ГхШ), доп. оплата за использование в случае загрязнения</p>
+              <p><b>Цена:</b> 2500 руб. / час (бронь от 1 часа)</p>
+              <p><b>Интерьер:</b> концептуальная мебель, геометрическая конструкция, хромированный угол с металлическим
+                столиком, ростовое зеркало</p>
+              <p><b>Оборудование:</b> в стоимость зала включены 2 импульсных источника света.</p>
+            </div>
+            <div class="room-item__button">
+              <button class="hero-button">Забронировать</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="room-item__content">
+            <div class="room-item__image">
+              <img src="assets/img/rooms/room4.jpg" alt="room 2">
+            </div>
+            <div class="room-item__description">
+              <h3>Зал 4</h3>
+              <p><b>Зал:</b> 120 кв. м, белый потолок, высота потолков 6м, панорамное остекление, белый потолок и
+                бетонный
+                пол</p>
+              <p><b>Циклорама:</b> есть 4х5.5 м (ГхШ), доп. оплата за использование в случае загрязнения</p>
+              <p><b>Цена:</b> 2500 руб. / час (бронь от 1 часа)</p>
+              <p><b>Интерьер:</b> концептуальная мебель, геометрическая конструкция, хромированный угол с металлическим
+                столиком, ростовое зеркало</p>
+              <p><b>Оборудование:</b> в стоимость зала включены 2 импульсных источника света.</p>
+            </div>
+            <div class="room-item__button">
+              <button class="hero-button">Забронировать</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="room-item__content">
+            <div class="room-item__image">
+              <img src="assets/img/rooms/room1.jpg" alt="room 2">
+            </div>
+            <div class="room-item__description">
+              <h3>Зал 4</h3>
+              <p><b>Зал:</b> 120 кв. м, белый потолок, высота потолков 6м, панорамное остекление, белый потолок и
+                бетонный
+                пол</p>
+              <p><b>Циклорама:</b> есть 4х5.5 м (ГхШ), доп. оплата за использование в случае загрязнения</p>
+              <p><b>Цена:</b> 2500 руб. / час (бронь от 1 часа)</p>
+              <p><b>Интерьер:</b> концептуальная мебель, геометрическая конструкция, хромированный угол с металлическим
+                столиком, ростовое зеркало</p>
+              <p><b>Оборудование:</b> в стоимость зала включены 2 импульсных источника света.</p>
+            </div>
+            <div class="room-item__button">
+              <button class="hero-button">Забронировать</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="room-item__content">
+            <div class="room-item__image">
+              <img src="assets/img/rooms/room2.jpg" alt="room 2">
+            </div>
+            <div class="room-item__description">
+              <h3>Зал 4</h3>
+              <p><b>Зал:</b> 120 кв. м, белый потолок, высота потолков 6м, панорамное остекление, белый потолок и
+                бетонный
+                пол</p>
+              <p><b>Циклорама:</b> есть 4х5.5 м (ГхШ), доп. оплата за использование в случае загрязнения</p>
+              <p><b>Цена:</b> 2500 руб. / час (бронь от 1 часа)</p>
+              <p><b>Интерьер:</b> концептуальная мебель, геометрическая конструкция, хромированный угол с металлическим
+                столиком, ростовое зеркало</p>
+              <p><b>Оборудование:</b> в стоимость зала включены 2 импульсных источника света.</p>
+            </div>
+            <div class="room-item__button">
+              <button class="hero-button">Забронировать</button>
             </div>
           </div>
         </div>
@@ -190,48 +224,7 @@
     </div>
   </section>
 
-  <section class="dates">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2>Available Dates</h2>
-        </div>
-        <div class="col-12">
-          <div class="calendar__container">
-            <div class="calendar">
-
-            </div>
-            <div class="calendar__details"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row footer__row">
-        <nav class="footer__nav">
-          <ul class="footer__links">
-            <li><a href="#about">Works</a></li>
-            <li><a href="#services">Studio Zones</a></li>
-            <li><a href="#contact">About Me</a></li>
-            <li><a href="#privacy">Pricing</a></li>
-            <li><a href="#privacy">Available Dates</a></li>
-          </ul>
-        </nav>
-        <div class="footer__contact">
-          <a href="tel:+1234567890">📞 +1 (234) 567-890</a>
-          <a href="mailto:info@company.com">✉️ info@company.com</a>
-        </div>
-        <div class="footer__social">
-          <a href="#" class="social-icon">Facebook</a>
-          <a href="#" class="social-icon">Twitter</a>
-          <a href="#" class="social-icon">Instagram</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <script src="assets/scripts/main.js"></script>
 </body>
 
 </html>
